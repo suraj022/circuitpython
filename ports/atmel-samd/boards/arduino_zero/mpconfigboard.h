@@ -1,4 +1,4 @@
-#define MICROPY_HW_BOARD_NAME "Arduino Zero"
+#define MICROPY_HW_BOARD_NAME "Curio"
 #define MICROPY_HW_MCU_NAME "samd21g18"
 
 #define MICROPY_HW_LED_STATUS   (&pin_PA17)
@@ -21,8 +21,8 @@
 #define DEFAULT_SPI_BUS_MOSI (&pin_PB10)
 #define DEFAULT_SPI_BUS_MISO (&pin_PA12)
 
-#define DEFAULT_UART_BUS_RX (&pin_PA11)
-#define DEFAULT_UART_BUS_TX (&pin_PA10)
+#define DEFAULT_UART_BUS_RX (&pin_PB23)
+#define DEFAULT_UART_BUS_TX (&pin_PB22)
 
 // USB is always used internally so skip the pin objects for it.
 #define IGNORE_PIN_PA24     1
